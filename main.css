@@ -1,12 +1,18 @@
-* {
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+section h2{
+    display: block;
+    padding: 0 0 0 100px;
+}
+
 header ,
 section  h2,
-section h3 {
+section h3,
+h1 {
     font-family: "Bungee", sans-serif;
     font-weight: normal;
 }
@@ -28,8 +34,6 @@ header {
 header a{
     color: rgb(246, 180, 94);
     text-decoration: none;
-    margin: 1px;
-    size: 100px;
 }
 
 header nav li {
@@ -37,6 +41,10 @@ header nav li {
     margin-left: 16px;
     font-size: 12px;
 }
+#about {
+margin: 40px;
+}
+
 
 section h2 , li a{
     color:rgb(86, 91, 86);
@@ -54,16 +62,38 @@ header nav li a {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    zoom: 100%;
 }
 
-header .container, section .container {
+
+#about a{
+    text-decoration: solid;
+    color: rgb(252, 252, 252);
+    background-color: #ffbd3a;
+    border-radius: 10px;
+    padding: 5px;
+}
+#about a:hover {
+    background-color: #fff;
+    color: #020202;
+    border-radius: red;
+    border-style: solid;
+}
+#about .link {
+    margin: 14px;
+}
+header .container { 
     display: flex; /*lado a lado*/
     align-items: center; /*centralizar menu*/
     justify-content: space-between; /*jogar para direita*/
 }
+section .container {
+    display: flex;
+
+}
 
 .brands-list img{
-    height: 24px;
+    height: 40px;
 }
 
 .brands-list li{
@@ -75,15 +105,6 @@ section .container{
     align-items: flex-start;
 }
 
-section h2{
-    padding: 10px;
-    font-size: xx-large;
-}
-
-section {
-    padding-top:   40px;
-}
-
 section p {
     margin-bottom: 9px;
 }
@@ -91,6 +112,8 @@ section p {
 section .store-img{
     margin-right: 14px;
     border-radius: 15px;
+    height: 400px;
+    margin: 0 15px 40px;
 }
 
 .social-links img{
@@ -107,18 +130,23 @@ section .store-img{
     text-decoration: none;
 }
 
-#contact .container{
+#contact .container{ 
     display: block;
+    margin: 0 10px,
 }
 .contact-methods{
-    display: flex;
-    justify-content: space-around;
+    display: flex;   
+    justify-content: space-between;
+}
+#contact h2{
+    padding: 0px;
 }
 
-.contact-methods h3{
-    margin-left: 14px;
-    margin: 10px;
-}
+/*#contac ,h2{
+    margin: 0 20px;
+}*/
+
+
 form input,
 form button { 
     display: block;
@@ -128,34 +156,35 @@ form button {
     padding: 8px;
     border-style: solid;
     border-radius: 15px;
-
 }
 
 form button{
-    background-color: rgb(86, 91, 86);
     border-style: solid;
     border-radius: 22px; color: #fff;
-    border-color: rgb(245, 237, 97);
+    border-color: rgb(255, 246, 125);
+    background: linear-gradient(#3a3a3a ,#c99a16);
     width: 100%;
     height: 200%;
     cursor: pointer;
     }
 form button:hover{
-    background-color: rgb(222, 158, 46);
-    color: rgb(9, 5, 5);
-    border-color: rgb(5, 5, 5);
+    border-color: rgb(14, 12, 12);
 }
 
 input:focus,textarea:focus{
-    outline-color: rgb(0, 255, 42);
+    color: #8a16c9;
+    outline-color: #c99a16;
 }
 
 form textarea{
-    resize: none; /* fixar barra de msg*/
+    padding-left: 9px;
     padding-left: 9px;
     padding-top: 10px;
     height: 90px;;
     width: 100%;
+    resize: none;
+    border-radius: 13px;
+    border: solid; color: #fff;
 }
 
 footer{
