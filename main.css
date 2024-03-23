@@ -132,7 +132,6 @@ section .store-img{
 
 #contact .container{ 
     display: block;
-    margin: 0 10px,
 }
 .contact-methods{
     display: flex;   
@@ -172,7 +171,7 @@ form button:hover{
 }
 
 input:focus,textarea:focus{
-    color: #8a16c9;
+    color: #c91681;
     outline-color: #c99a16;
 }
 
